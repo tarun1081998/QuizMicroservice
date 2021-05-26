@@ -67,6 +67,7 @@ namespace QuizMicroservice.Controllers
             var list2 = from l in _context.Quiz.Where(x=>x.Category==category).OrderBy(c => Guid.NewGuid()).Take(count)
                        select new
                        {
+
                            ID = l.Id,
                            Question = l.Question,
                            A = l.A,
