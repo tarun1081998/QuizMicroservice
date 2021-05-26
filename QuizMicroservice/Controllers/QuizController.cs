@@ -37,6 +37,7 @@ namespace QuizMicroservice.Controllers
             return new OkObjectResult(list1);
         }
 
+
         [HttpGet]
         public IActionResult Get(int count,string category)
         {
